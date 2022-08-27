@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AddressController;
 use App\Http\Controllers\CustomerController;
 use App\Models\Customer;
 use Illuminate\Http\Request;
@@ -21,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('customer', CustomerController::class);
+Route::apiResource('address', AddressController::class)->except(['index', 'show']);

@@ -17,4 +17,9 @@ class Customer extends Model
         'image',
         'email'
     ];
+
+    public function addresses()
+    {
+        return $this->hasMany(Address::class);
+    }
 }
