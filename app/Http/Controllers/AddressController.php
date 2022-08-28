@@ -42,7 +42,6 @@ class AddressController extends Controller
     public function destroy($id)
     {
         Address::destroy($id);
-        return response('Data deleted successfully', 204)
-                  ->header('Content-Type', 'application/json');
+        return response('Data deleted successfully', 204)->header('Content-Type', 'application/json');
     }
 }
