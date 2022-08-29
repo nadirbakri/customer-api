@@ -21,7 +21,6 @@ Berikut ini merupakan langkah langkah untuk menjalankan project:
 - Run php artisan key:generate
 - Run php artisan migrate
 - Run php artisan serve
-- Go to link http://127.0.0.1:8000/
-- Delete Address(DELETE /api/address/{id}).
+- Try one of the endpoints above
 
 **MADE BY NADIR RUAYUANDA BAKRI**
